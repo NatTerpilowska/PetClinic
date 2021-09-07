@@ -12,6 +12,8 @@ services:
     backend:
         container_name: "petclinicback"
         image: springcommunity/spring-petclinic-rest
+        ports:
+            - 9966:9966
         # mfroy/petclinicback
         # build: spring-petclinic-rest
         # environment:
