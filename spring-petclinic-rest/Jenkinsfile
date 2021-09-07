@@ -5,6 +5,11 @@ pipeline{
         DOCKERHUB_CREDENTIALS = credentials('DOCKERHUB_CREDENTIALS')
     }
     stages{
+        stage('Install Requirements'){
+            steps{
+                sh "bash scripts/install.sh"
+            }
+        }
         stage('Testing'){
             steps{
                 sh "bash scripts/test.sh"
@@ -18,6 +23,11 @@ pipeline{
         stage('Push Images'){
             steps{
                 sh "bash scripts/push.sh"
+            }
+        }
+        stage('Terraform'){
+            steps{
+                sh "bash scripts/terraform.sh"
             }
         }
         stage('Configure & Deploy'){
