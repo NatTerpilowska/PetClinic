@@ -4,7 +4,7 @@ metadata:
   name: nginx
 spec:
   selector:
-    app: petclinicfront
+    app: nginx
   ports:
   - protocol: TCP
     port: 80
