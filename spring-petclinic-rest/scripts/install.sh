@@ -8,18 +8,22 @@ java --version
 sudo apt install curl -y
 curl https://get.docker.com | sudo bash 
 sudo usermod -aG docker $(whoami)
-# NGINX
-sudo apt install -y nginx
-# Dcoker-NGINX config 
-docker run -d --rm -p 80:80 --name nginx nginx
-# Ansible (notsure if needed) 
-sudo apt update 
-sudo apt install software-properties-common
-sudo apt-add-repository --yes --update ppa:ansible/ansible
-sudo apt install ansible
-# Terraform 
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y unzip wget
-sudo mv terraform /usr/local/bin
-# Verify 
-terraform --version 
+
+# make sure jq & curl is installed
+sudo apt install -y curl jq
+# set which version to download (latest)
+version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
+# download to /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/${version}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# make the file executable
+sudo chmod +x /usr/local/bin/docker-compose
+# # Ansible (notsure if needed) 
+# sudo apt install software-properties-common
+# sudo apt-add-repository --yes --update ppa:ansible/ansible
+# sudo apt install ansible
+# # Terraform 
+# sudo apt upgrade -y
+# sudo apt install -y unzip wget
+# sudo mv terraform /usr/local/bin
+# # Verify 
+# terraform --version 
