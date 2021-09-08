@@ -30,9 +30,9 @@ pipeline{
                 sh "bash scripts/terraform.sh"
             }
         }
-        stage('Configure & Deploy'){
+        stage('Deploy'){
             steps{
-                sh "bash scripts/deploy.sh"
+                sh "bash scripts/k8s.sh"
             
             }
         }
