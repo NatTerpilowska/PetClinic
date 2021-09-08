@@ -17,10 +17,7 @@ version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | 
 sudo curl -L "https://github.com/docker/compose/releases/download/${version}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 # make the file executable
 sudo chmod +x /usr/local/bin/docker-compose
-# # Ansible (notsure if needed) 
-# sudo apt install software-properties-common
-# sudo apt-add-repository --yes --update ppa:ansible/ansible
-# sudo apt install ansible
+
 # # Terraform 
 # sudo apt upgrade -y
 # sudo apt install -y unzip wget
