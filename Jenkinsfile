@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('Install Requirements'){
             steps{
-                sh "bash scripts/install.sh"
+                sh "cd spring-petclinic-rest && bash scripts/install.sh"
             }
         }
         stage('Testing'){
