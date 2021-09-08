@@ -28,6 +28,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # # Verify 
 # terraform --version 
 cd spring-petclinic-angular
+rm -rf node_modules
 sudo apt install npm -y
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -39,7 +40,7 @@ npm install --save-dev @angular/cli@latest
 
 npm install
 npm i --save-dev karma karma-chrome-launcher
-npm update
+
 sudo apt-get install chromium-browser -y
 #wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 cd ..
