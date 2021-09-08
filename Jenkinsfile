@@ -17,22 +17,22 @@ pipeline{
         }   
         stage('Build Images'){
             steps{
-                sh "bash scripts/build.sh"
+                sh "cd spring-petclinic-rest && bash scripts/build.sh"
             }
         }
         stage('Push Images'){
             steps{
-                sh "bash scripts/push.sh"
+                sh "cd spring-petclinic-rest && bash scripts/push.sh"
             }
         }
         stage('Terraform'){
             steps{
-                sh "bash scripts/terraform.sh"
+                sh "cd spring-petclinic-rest && bash scripts/terraform.sh"
             }
         }
         stage('Configure & Deploy'){
             steps{
-                sh "bash scripts/deploy.sh"
+                sh "cd spring-petclinic-rest && bash scripts/deploy.sh"
             
             }
         }
