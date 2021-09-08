@@ -18,12 +18,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/${version}/doc
 # make the file executable
 sudo chmod +x /usr/local/bin/docker-compose
 
-# # Terraform 
-# sudo apt upgrade -y
-# sudo apt install -y unzip wget
-# sudo mv terraform /usr/local/bin
-# # Verify 
-# terraform --version 
 cd spring-petclinic-angular
 rm -rf node_modules
 sudo apt install npm -y
@@ -32,8 +26,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 sudo npm uninstall -g angular-cli @angular/cli
 npm cache clean
-sudo npm install -g @angular/cli@latest
-npm install --save-dev @angular/cli@latest
+sudo npm install -g @angular/cli@8
+npm install --save-dev @angular/cli@8
 
 npm install
 npm i --save-dev karma karma-chrome-launcher
