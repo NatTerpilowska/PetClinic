@@ -7,27 +7,27 @@ pipeline{
     stages{
         stage('Install Requirements'){
             steps{
-                sh "cd spring-petclinic-rest && bash scripts/install.sh"
+                sh "bash scripts/install.sh"
             }
         }
         stage('Testing'){
             steps{
-                sh "cd spring-petclinic-rest && bash scripts/test.sh"
+                sh "bash scripts/test.sh"
             }
         }   
         stage('Build Images'){
             steps{
-                sh "cd spring-petclinic-rest && bash scripts/build.sh"
+                sh "bash scripts/build.sh"
             }
         }
         stage('Terraform'){
             steps{
-                sh "cd spring-petclinic-rest && bash scripts/terraform.sh"
+                sh "bash scripts/terraform.sh"
             }
         }
         stage('Configure & Deploy'){
             steps{
-                sh "cd spring-petclinic-rest && bash scripts/deploy.sh"
+                sh "bash scripts/deploy.sh"
             
             }
         }
