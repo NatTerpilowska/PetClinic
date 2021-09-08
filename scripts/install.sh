@@ -1,7 +1,7 @@
 #! bin/bash
 # If using Ubuntu 18.04
 sudo apt update
-sudo apt install default-jdk
+sudo apt-get install default-jdk -y
 # Verify 
 java --version
 # Docker-stuff Install
@@ -28,6 +28,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # # Verify 
 # terraform --version 
 cd spring-petclinic-angular
+sudo apt install npm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 npm uninstall -g angular-cli @angular/cli
 npm cache clean
