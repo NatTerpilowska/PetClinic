@@ -28,7 +28,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # # Verify 
 # terraform --version 
 cd spring-petclinic-angular
-sudo apt install npm
+sudo apt install npm -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 npm uninstall -g angular-cli @angular/cli
 npm cache clean
