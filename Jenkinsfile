@@ -20,11 +20,6 @@ pipeline{
                 sh "cd spring-petclinic-rest && bash scripts/build.sh"
             }
         }
-        stage('Push Images'){
-            steps{
-                sh "cd spring-petclinic-rest && bash scripts/push.sh"
-            }
-        }
         stage('Terraform'){
             steps{
                 sh "cd spring-petclinic-rest && bash scripts/terraform.sh"
