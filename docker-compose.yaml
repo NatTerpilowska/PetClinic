@@ -11,13 +11,12 @@ services:
 
     backend:
         container_name: "petclinicback"
-        image: springcommunity/spring-petclinic-rest
+        image: mfroy/petclinicback
+        build: spring-petclinic-rest
         ports:
             - 9966:9966
-        # mfroy/petclinicback
-        # build: spring-petclinic-rest
-        # environment:
-        #     DATABASE_URI:
+        environment:
+            DATABASE_URI: ("DATABASE_URI")
 
     frontend:
         container_name: "petclinicfront"
