@@ -27,6 +27,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # sudo mv terraform /usr/local/bin
 # # Verify 
 # terraform --version 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 sudo npm uninstall -g angular-cli @angular/cli
 sudo npm cache clean
 sudo npm install -g @angular/cli@latest
@@ -34,7 +35,7 @@ sudo npm install -g @angular/cli@latest
 sudo npm install --save-dev @angular/cli@latest
 
 sudo npm install
-
+npm i --save-dev karma karma-chrome-launcher
 sudo apt-get install chromium-browser -y
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+#curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
