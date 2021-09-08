@@ -31,11 +31,11 @@ cd spring-petclinic-angular
 sudo apt install npm -y
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-sudo nvm install 12.14.1
+
 sudo npm uninstall -g angular-cli @angular/cli
 npm cache clean
 sudo npm install -g @angular/cli@latest
-
+sudo nvm install 12.14.1
 npm install --save-dev @angular/cli@latest
 
 npm install
