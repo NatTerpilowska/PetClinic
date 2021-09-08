@@ -20,6 +20,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 cd spring-petclinic-angular
 rm -rf node_modules
+rm -f *.deb
 sudo apt install npm -y
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
