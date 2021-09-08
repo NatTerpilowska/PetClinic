@@ -28,13 +28,13 @@ sudo chmod +x /usr/local/bin/docker-compose
 # # Verify 
 # terraform --version 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-sudo npm uninstall -g angular-cli @angular/cli
-sudo npm cache clean
-sudo npm install -g @angular/cli@latest
+npm uninstall -g angular-cli @angular/cli
+npm cache clean
+npm install -g @angular/cli@latest
 
-sudo npm install --save-dev @angular/cli@latest
+npm install --save-dev @angular/cli@latest
 
-sudo npm install
+npm install
 npm i --save-dev karma karma-chrome-launcher
 sudo apt-get install chromium-browser -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
