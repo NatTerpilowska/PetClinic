@@ -25,7 +25,7 @@ sudo apt install npm -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 sudo npm uninstall -g angular-cli @angular/cli
-npm cache clean
+sudo npm cache clean --force
 sudo npm install -g @angular/cli@8
 npm install --save-dev @angular/cli@8
 
