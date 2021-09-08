@@ -71,15 +71,20 @@ As can be seen below, our “Swarm or Interactions Diagram” shows how the appl
 The front-end of the application has been very nicely built and shows an advanced design that even includes pictures and buttons to press.    
 
 **Back End**
+The Back End essentially connects the database to the front-end, enables editing the database and displays the results in the Front End side of the application. It also saves the results in our database.
+We've deployed it the same way we deployed front end - First we've put it in containers and then we've orchestrated them with Terraform configured Kubernetes enviroment.
 
 **Future Implementations**
+It would be very useful to increase the coverage of the tests.
+From the deployment point of view - the pipeline could run a little bit faster.
 
 **Acknowlegments**
+We'd all like to say thank you to Harry Volker who patiently guided us on the journey of deployment of this application - it wouldn't happen without his amazing support.
 
 **Authors**
+MF Roy, Chaz Bhavra, Matt Vile, Nat Terpilowska
 
 **Version**
-
 
 ![RA](https://i.imgur.com/zaKEycw.png) **Click to zoom in
 ![](https://i.imgur.com/O3GN00D.png)
