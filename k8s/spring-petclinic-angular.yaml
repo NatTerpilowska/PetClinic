@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: petclinicfront
+spec:
+  selector:
+    app: petclinicfront
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petclinicfront
+  labels:  
+    app: petclinicfront
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petclinicfront
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template:
+    metadata:
+      labels:
+        app: petclinicfront
+    spec:
+      containers:
+      - name: petclinicfront
+        image: mfroy/pectclinicfront
+        ports:
+        - containerPort: 8080   

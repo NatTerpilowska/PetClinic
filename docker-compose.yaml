@@ -1,0 +1,25 @@
+services:
+    nginx:
+        container_name: nginx
+        image: nginx:alpine
+        ports:
+            - 80:80
+        volumes:
+            - type: bind
+              source: ./nginx/nginx.conf
+              target: /etc/nginx/nginx.conf
+
+    backend:
+        container_name: "petclinicback"
+        image: mfroy/petclinicback
+        build: spring-petclinic-rest
+        ports:
+            - 9966:9966
+        environment:
+            DATABASE_URI: ("DATABASE_URI")
+
+    frontend:
+        container_name: "petclinicfront"
+        image: mfroy/pectclinicfront
+        build: spring-petclinic-angular
+     
