@@ -80,14 +80,6 @@ The front-end of the application has been very nicely built and shows an advance
 The Back End essentially connects the database to the front-end, enables editing the database and displays the results in the Front End side of the application. It also saves the results in our database.
 We've deployed it the same way we deployed front end - First we've put it in containers and then we've orchestrated them with Terraform configured Kubernetes enviroment.
 
-## Testing 
-
-The testing was running on a local vm in headless mode but we couldn't implement it with the jenkins pipeline due to time constraints.
-
-<a href="https://ibb.co/QdSrpY3"><img src="https://i.ibb.co/vYyZVL6/Screenshot-39.png" alt="Screenshot-39" border="0"></a>
-
-<a href="https://ibb.co/drntD0s"><img src="https://i.ibb.co/1LHMTfY/Screenshot-40.png" alt="Screenshot-40" border="0" /></a>
-
 ## Future Implementations
 It would be very useful to increase the coverage of the tests.
 From the deployment point of view - the pipeline could run a little bit faster.
