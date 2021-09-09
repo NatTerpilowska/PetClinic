@@ -30,7 +30,9 @@ Our group risk assessment can be viewed below. It is fairly thorough and strongl
 <a href="https://ibb.co/yknbBcC"><img src="https://i.ibb.co/DMDSgHF/Screenshot-37.png" alt="Screenshot-37" border="0"></a> 
 
 ### Project Tracking
-For this project, tracking was very important as there is more than just one individual working on the project. So, there was a requirement for a certain level of interactivity and real-time updates so that team members knew clearly what needed to be done and what has been done.  This would increase productivity and efficiency. With that in mind, we chose to use Jira as our project tracking method. Due to its real-time updates on tasks and seamlessness. (n example can be seen below?)
+For this project, tracking was very important as there is more than just one individual working on the project. So, there was a requirement for a certain level of interactivity and real-time updates so that team members knew clearly what needed to be done and what has been done.  This would increase productivity and efficiency. With that in mind, we chose to use Jira as our project tracking method. Due to its real-time updates on tasks and seamlessness. 
+
+<a href="https://ibb.co/0D5TyRR"><img src="https://i.ibb.co/C1LgK33/Screenshot-42.png" alt="Screenshot-42" border="0"></a>
 
 ### ERD
 Our Entity Relationship Diagram (shown below) is complex but succinctly covers the whole scale of the operation. There are 3 separate relationships occurring. One is to do with Users of the application and how it the assigns them a role and ID. This is unique to each User. The second is a relationship exhibiting which Vets there are and what specialisms they hold. These two variables are then also assigned keys for ease of computing. The final and most complex part is the relationship between Types of pets, their Owners and the Visit dates. All of this information comes together to for the application. 
