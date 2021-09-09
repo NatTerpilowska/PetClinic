@@ -3,5 +3,5 @@ variable "project_name" {
 }
 
 variable "location" {
-    default = "uksouth" 
+    default = "ukwest" 
 }
