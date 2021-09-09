@@ -22,14 +22,6 @@ The following is a proposal of the technologies/tools we will be using:
 - Orchestration – Kubernetes 
 - CI/CD Pipeline – Jenkins 
 
-The proposal for the application was helped by an Epic, which details the needs and wants of application users and what they would require from the app. Some examples are listed below and they meet basic CRUD requirements: 
-
--	As a user I want to be able to view my details so that I know I have inputted the correct information 
--	As a user I want to able to view my appointments so that I know which dates I have to attend 
--	As a user I want to be able to create an appointment so that I can have a check-up performed on my pet 
--	As a user I want to be able to change my appointment as I may no longer be able to attend it
--	As a user I want to be able to cancel my appointment as I may no longer require it
-
 ## Architecture
 
 ### Risk assessment
