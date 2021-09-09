@@ -1,18 +1,15 @@
 # PetClinic
 
 ## Introduction
-
 Pets are an integral part of peoples lives. They provide such happiness and joy and help people in many ways. So the following project is based on a Pet Clinic application, which is a kind of Vets service. 
 
 ### Objective
- 
 The main outcome for this project is to be able to take the provided application and apply fixes to it, so that it functions appropriately and to also deploy it so that it can be interacted with. The base application has been given and the aim is to sort out testing and to use the tools and technologies developed during the course to effectively install the application for exhibition. For this we will use tools such as Docker, Kubernetes, Terraform, etc and we will be using Java as our preferred coding language choice.
 
 ### Poposed Tech Stack
 <br>Version Controll - GitHub <br>CI server- Jenkins <br>Config Management - Terraform <br>Cloud provider- Azure <br>Container - Docker <br>orchestration - Kubernetes <br>Database - postgres <br>Front end - Java <br>Back end - Java
 
 ## Proposal
-
 The following is a proposal of the technologies/tools we will be using:
 
 - Coding language (Front & Back-end) - Java 
@@ -35,11 +32,11 @@ The proposal for the application was helped by an Epic, which details the needs 
 ## Architecture
 
 ### Risk assessment
-
 Our group risk assessment can be viewed below. It is fairly thorough and strongly outlines possible points of failure or mis-happenings from events that could occur. However, steps are taken to mitigate any issues from cropping up and if they should come to be what the procedure for dealing them would be. As we progressed through the project, we came up with more revisions for the risks and so added them in. 
 
-### Project Tracking
+<a href="https://ibb.co/yknbBcC"><img src="https://i.ibb.co/DMDSgHF/Screenshot-37.png" alt="Screenshot-37" border="0"></a> 
 
+### Project Tracking
 For this project, tracking was very important as there is more than just one individual working on the project. So, there was a requirement for a certain level of interactivity and real-time updates so that team members knew clearly what needed to be done and what has been done.  This would increase productivity and efficiency. With that in mind, we chose to use Jira as our project tracking method. Due to its real-time updates on tasks and seamlessness. (n example can be seen below?)
 
 ### ERD
@@ -48,13 +45,11 @@ Our Entity Relationship Diagram (shown below) is complex but succinctly covers t
 ![](https://github.com/NatTerpilowska/PetClinic/raw/main/spring-petclinic-rest/petclinic-ermodel.png)
 
 ### Testing Analysis 
-
 For this project we have only applied the basic testing using `ng test`. However, for future projects it would be wise to incorporate other forms of testing. For example, non-functional performance & robustness testing to test speed responsiveness and reliability of the application. For something as sensitive as this, possibly even application of security and capacity testing to ward off attackers attempting to steal information, etc.
 
 ## Infrastructure
 
 ### Jenkins CI/CD Pipeline
-
 The CI/CD Pipeline is undertaken by Jenkins. It takes all of the instructions that input in scripts an executes them to replicate our application build. This also has a webhook built in so that every time the VCS GitHub is updated a new version of the application is built and tested so that we can observe its functionality. Like in previous projects our Pipeline follows a fairly accepted route as is detailed below: 
 
 -Firstly all Declarations are made
