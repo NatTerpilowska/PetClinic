@@ -92,6 +92,7 @@ MF Roy, Chaz Bhavra, Matt Vile, Nat Terpilowska
 
 ## Version
 
-![RA](https://i.imgur.com/zaKEycw.png) **Click to zoom in
+<a href="https://ibb.co/yknbBcC"><img src="https://i.ibb.co/DMDSgHF/Screenshot-37.png" alt="Screenshot-37" border="0"></a> 
+**Click to zoom in
 ![](https://i.imgur.com/O3GN00D.png)
 ![](https://github.com/NatTerpilowska/PetClinic/raw/main/spring-petclinic-rest/petclinic-ermodel.png)
