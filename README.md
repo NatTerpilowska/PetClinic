@@ -78,7 +78,9 @@ As can be seen below, our “Swarm or Interactions Diagram” shows how the appl
 ## Development
 
 ## Front-End
-The front-end of the application has been very nicely built and shows an advanced design that even includes pictures and buttons to press.    
+The front-end of the application has been very nicely built and shows an advanced design that even includes pictures and buttons to press.
+
+![Screenshot of SPring Petclinic Angular](https://cloud.githubusercontent.com/assets/838318/23263243/f4509c4a-f9dd-11e6-951b-69d0ef72d8bd.png)
 
 ## Back-End
 The Back End essentially connects the database to the front-end, enables editing the database and displays the results in the Front End side of the application. It also saves the results in our database.
