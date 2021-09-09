@@ -15,29 +15,13 @@ resource "azurerm_resource_group" "main" {
     location = var.location 
 }
 
-# Virtual netwrok module
+# k8s Module
 
-module "vnet" {
-    source       = "./vnet"
-    project_name = var.project_name
-    group_name   = azurerm_resource_group.main.name
-    location     = var.location
-    vm_count     = var.vm_count
-}
-
-
-# Virtual machines module
-
-module "vm" {
-    source        = "./vm"
-    project_name  = var.project_name
-    group_name    = azurerm_resource_group.main.name
-    location      = var.location
-    interface_ids = module.vnet.interface_ids
-
-    vm_count      = var.vm_count
-    vm_size       = var.vm_size
-    storage_size  = var.storage_size
+module "k8s-cluster" {
+    source = "./k8s"
+    location = var.location
+    rG_name = azurerm_resource_group.main.name
+    project_name = var.project_name 
 }
 
 
