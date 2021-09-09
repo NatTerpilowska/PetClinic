@@ -68,7 +68,7 @@ The CI/CD Pipeline is undertaken by Jenkins. It takes all of the instructions th
 - Kubernetes finally orchestrates the application where it is ready to access and use
 
 The Pipeline diagram can be seen below: 
-
+![](https://i.imgur.com/g39ztGh.png)
 
 ### Swarm Diagram
 As can be seen below, our “Swarm or Interactions Diagram” shows how the application works with regards to who it functions when accessed by a User. It is fairly simple. A User attempts to access the application, as they do this they are met by the NGINX Reverse Proxy that re-directs them to The Static Web-Server. The Rest API, communicates with the User and the web-server to attain information that will be stored or is already stored in the database. From there whether the information needs to be saved for new users or brought up for existing users will depend on the users themselves. 
