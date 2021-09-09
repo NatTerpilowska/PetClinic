@@ -6,10 +6,11 @@ Pets are an integral part of peoples lives. They provide such happiness and joy 
 ### Objective
 The main outcome for this project is to be able to take the provided application and apply fixes to it, so that it functions appropriately and to also deploy it so that it can be interacted with. The base application has been given and the aim is to sort out testing and to use the tools and technologies developed during the course to effectively install the application for exhibition. For this we will use tools such as Docker, Kubernetes, Terraform, etc and we will be using Java as our preferred coding language choice.
 
-### Poposed Tech Stack
-<br>Version Controll - GitHub <br>CI server- Jenkins <br>Config Management - Terraform <br>Cloud provider- Azure <br>Container - Docker <br>orchestration - Kubernetes <br>Database - postgres <br>Front end - Java <br>Back end - Java
 
 ## Proposal
+
+### Poposed Tech Stack
+
 The following is a proposal of the technologies/tools we will be using:
 
 - Coding language (Front & Back-end) - Java 
@@ -74,8 +75,6 @@ As can be seen below, our “Swarm or Interactions Diagram” shows how the appl
 
 ![](https://i.imgur.com/O3GN00D.png)
 
-### Service Diagram
-?
 ## Development
 
 ## Front-End
@@ -90,6 +89,7 @@ We've deployed it the same way we deployed front end - First we've put it in con
 The testing was running on a local vm in headless mode but we couldn't implement it with the jenkins pipeline due to time constraints.
 
 <a href="https://ibb.co/QdSrpY3"><img src="https://i.ibb.co/vYyZVL6/Screenshot-39.png" alt="Screenshot-39" border="0"></a>
+
 <a href="https://ibb.co/drntD0s"><img src="https://i.ibb.co/1LHMTfY/Screenshot-40.png" alt="Screenshot-40" border="0" /></a>
 
 ## Future Implementations
@@ -103,8 +103,4 @@ We'd all like to say thank you to Harry Volker who patiently guided us on the jo
 MF Roy, Chaz Bhavra, Matt Vile, Nat Terpilowska
 
 ## Version
-
-<a href="https://ibb.co/yknbBcC"><img src="https://i.ibb.co/DMDSgHF/Screenshot-37.png" alt="Screenshot-37" border="0"></a> 
-**Click to zoom in
-![](https://i.imgur.com/O3GN00D.png)
-![](https://github.com/NatTerpilowska/PetClinic/raw/main/spring-petclinic-rest/petclinic-ermodel.png)
+Version 1.0.0
