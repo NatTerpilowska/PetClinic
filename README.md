@@ -58,13 +58,13 @@ the above picture shows why the specific test failed and below shows the test re
 ### Jenkins CI/CD Pipeline
 The CI/CD Pipeline is undertaken by Jenkins. It takes all of the instructions that input in scripts an executes them to replicate our application build. This also has a webhook built in so that every time the VCS GitHub is updated a new version of the application is built and tested so that we can observe its functionality. Like in previous projects our Pipeline follows a fairly accepted route as is detailed below: 
 
--Firstly all Declarations are made
--Installation of all basic requirements
--Testing is undertaken 
--The front and back-end services are containerised (images built)
--They are pushed forward to Docker-hub 
--Terraform initialises configuration settings and other requirements
--Kubernetes finally orchestrates the application where it is ready to access and use
+- Firstly all Declarations are made
+- Installation of all basic requirements
+- Testing is undertaken 
+- The front and back-end services are containerised (images built)
+- They are pushed forward to Docker-hub 
+- Terraform initialises configuration settings and other requirements
+- Kubernetes finally orchestrates the application where it is ready to access and use
 
 The Pipeline diagram can be seen below: 
 
