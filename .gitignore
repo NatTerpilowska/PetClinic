@@ -21,6 +21,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 .terraform.lock.hcl
 
 # Local .terraform directories
@@ -58,3 +59,12 @@ override.tf.json
 .terraformrc
 terraform.rc
 .terraform
+=======
+
+
+#node module
+node_modules/
+
+
+*.deb
+>>>>>>> fcc0e56d8ccbec43e0fe47cda18a10c62c8bd3b5

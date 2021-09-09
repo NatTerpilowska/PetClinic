@@ -20,11 +20,6 @@ pipeline{
                 sh "bash scripts/build.sh"
             }
         }
-        stage('Push Images'){
-            steps{
-                sh "bash scripts/push.sh"
-            }
-        }
         stage('Terraform'){
             steps{
                 sh "bash scripts/terraform.sh"
