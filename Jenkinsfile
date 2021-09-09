@@ -3,6 +3,7 @@ pipeline{
     environment{
         DATABASE_URI = credentials('DATABASE_URI')
         DOCKERHUB_CREDENTIALS = credentials('DOCKERHUB_CREDENTIALS')
+        AZ_CREDENTIALS = credentials('AZ_CREDENTIALS')
     }
     stages{
         stage('Install Requirements'){
