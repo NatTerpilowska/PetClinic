@@ -1,4 +1,4 @@
-# PetClinic
+# Pet Clinic
 
 ## Introduction
 Pets are an integral part of peoples lives. They provide such happiness and joy and help people in many ways. So the following project is based on a Pet Clinic application, which is a kind of Vets service. 
