@@ -1,0 +1,62 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  default.conf: |   # name of the file that will be mounted
+    server {
+        listen 80;
+        location / {
+            proxy_pass http://petclinicfront:8080;
+        }
+        location /petclinic/api/ {
+            proxy_pass http://petclinicback:9966/petclinic/api/;
+        }
+    }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: appgateway
+spec:
+  selector:
+    app: appgateway
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
+---         
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appgateway
+  labels:
+    app: appgateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: appgateway
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template:    
+    metadata:
+      labels:
+        app: appgateway
+    spec:
+      containers:
+      - name: appgateway
+        image: nginx:alpine
+        ports:
+        - containerPort: 9966
+        volumeMounts:
+        - name: nginx-config
+          mountPath: /etc/nginx/conf.d 
+      volumes:
+      - name: nginx-config
+        configMap:
+          name: nginx-config
